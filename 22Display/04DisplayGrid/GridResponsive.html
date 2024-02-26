@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>Grid Responsive</title>
+    <!-- link stylesheet CSS  -->
+    <link rel="stylesheet" href="../../styleFile/styleCSS.css">
+    <!-- page favicon link  -->
+    <link rel="shortcut icon" href="../../image/css-3.png" type="image/x-icon">
+
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        #page {
+            display: grid;
+            width: 100%;
+            height: 250px;
+            grid-template-areas:
+                "header header"
+                "nav  nav"
+                "main  main"
+                "foot  foot";
+            grid-template-rows: auto;
+            grid-template-columns: 150px 1fr;
+
+        }
+
+        #page>header {
+            grid-area: header;
+            background-color: #8ca0ff;
+        }
+
+        #page>nav {
+            grid-area: nav;
+            background-color: #10abb9;
+        }
+
+        #page>main {
+            grid-area: main;
+            background-color: #ffdc8c;
+        }
+
+        #page>footer {
+            grid-area: foot;
+            background-color: #8cffa5;
+        }
+
+        @media (min-width:992px) {
+            #page {
+                grid-template-areas:
+                    "header header"
+                    "nav  main"
+                    "foot  foot";
+                grid-template-rows: 50px 1fr 30px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main container  -->
+    <div class="container">
+        <!-- CSS logo  -->
+        <div id="img">
+            <img src="../../image/css.logo.png" class="img-logo" alt="" srcset="">
+        </div>
+        <!-- container-items  -->
+        <div class="container-items">
+
+            <section id="page">
+                <header>Header</header>
+                <nav>Navigation</nav>
+                <main>Main area</main>
+                <footer>Footer</footer>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>visibility</title>
+    <!-- link stylesheet CSS  -->
+    <link rel="stylesheet" href="../../styleFile/styleCSS.css">
+    <!-- page favicon link  -->
+    <link rel="shortcut icon" href="../../image/css-3.png" type="image/x-icon">
+
+    <style>
+        .visi-vis {
+            visibility: visible;
+        }
+
+        .visi-hide {
+            visibility: hidden;
+        }
+
+        .visi-collapse {
+            visibility: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main container  -->
+    <div class="container">
+        <!-- CSS logo  -->
+        <div id="img">
+            <img src="../../image/css.logo.png" class="img-logo" alt="" srcset="">
+        </div>
+        <!-- container-items  -->
+        <div class="container-items">
+
+            /* Keyword values */
+            <ul>
+                <li> visibility: visible;</li>
+                <li> visibility: hidden;</li>
+                <li> visibility: collapse;</li>
+            </ul>
+            <hr>
+            before visible
+            <h2 class="visi-vis">visibility: visible;</h2>
+            after visible
+
+            <br>
+            <hr>
+            before hidden
+            <h2 class="visi-hide">visibility: hidden;</h2>
+            after hidden
+            <hr>
+            <br>
+
+            before collapse
+            <h2 class="visi-collapse">visibility: collapse;</h2>
+            after collapse
+
+            <hr>
+            before hide table
+            <table class="visi-hide">
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </table>
+
+            after hide table
+            <hr>
+            before collapse
+            <table class="visi-collapse">
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </table>
+            after collapse
+        </div>
+    </div>
+</body>
+
+</html>

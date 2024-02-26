@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>border redius</title>
+    <!-- link stylesheet CSS  -->
+    <link rel="stylesheet" href="../styleFile/styleCSS.css">
+    <!-- page favicon link  -->
+    <link rel="shortcut icon" href="../image/css-3.png" type="image/x-icon">
+    <style>
+        label {
+            border: 2px solid;
+            padding: 10px;
+            display: inline-block;
+            transition: all .5s;
+        }
+
+        label:hover {
+            border-radius: 20px 0px 20px 0px;
+        }
+
+        .circle {
+            background-color: teal;
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            border-radius: 50%;
+        }
+
+        .leaf {
+            background-color: rgb(6, 99, 193);
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            /* border-radius: 50% 0; */
+            border-radius: 10px 50px 0px 100px;
+        }
+
+        .test {
+            background-color: brown;
+            height: 50px;
+            width: 90px;
+            border: 10px solid black;
+            border-radius: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main container  -->
+    <div class="container">
+        <!-- CSS logo  -->
+        <div id="img">
+            <img src="../CSS/image/css.logo.png" class="img-logo" alt="" srcset="">
+        </div>
+        <!-- container-items  -->
+        <div class="container-items">
+            <label for="">Testing</label>
+            <div class="circle"></div>
+            <div class="leaf"></div>
+            <div class="test"></div>
+        </div>
+    </div>
+</body>
+
+</html>

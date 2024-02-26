@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>flex grow</title>
+    <!-- link stylesheet CSS  -->
+    <link rel="stylesheet" href="../../styleFile/styleCSS.css">
+    <!-- page favicon link  -->
+    <link rel="shortcut icon" href="../../image/css-3.png" type="image/x-icon">
+
+    <style>
+        .parent {
+            display: flex;
+            height: 250px;
+        }
+
+        .child-featured {
+            transition: all .5s;
+        }
+
+        .child-featured:hover {
+            flex-grow: 1;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main container  -->
+    <div class="container">
+        <!-- CSS logo  -->
+        <div id="img">
+            <img src="../../image/css.logo.png" class="img-logo" alt="" srcset="">
+        </div>
+        <!-- container-items  -->
+        <div class="container-items">
+
+            <div class="parent">
+                <div class="col">Col1</div>
+                <div class="col child-featured">Col2</div>
+                <div class="col">Col3</div>
+                <div class="col">Col4</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
